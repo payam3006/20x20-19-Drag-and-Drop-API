@@ -15,24 +15,27 @@
     <p>Drag and drop the items into their corresponding apots</p>
     <div id="mainContainer" class="mainContainer">
         <!-- <div class="num">1</div>
-        <div id="item1" class="item">
-            <p>hjsvbskjv shgcvjhvbjhjk bkljbkjnk</p>
+        <div id="item1" class="item" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)"
+            ondragleave="leave(event)" ondrop="drop(event)">
+            <p class="text">hjsvbskjv shgcvjhvbjhjk bkljbkjnk</p>
             <div id="dragBtn1" class="dragBtn"><i class="fa fa-reorder"></i></div>
+
         </div>
         <div class="num">2</div>
-        <div id="item2" class="item">
+        <div id="item2" class="item" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)"
+            ondrop="drop(event)" ondragleave="leave(event)">
             <p>hjsvbskjvs</p>
             <div id="dragBtn2" class="dragBtn"><i class="fa fa-reorder"></i></div>
         </div>
         <div class="num">3</div>
-        <div id="item3" class="item">
+        <div id="item3" class="item" draggable="true">
             <p>hjsvbskjvs</p>
             <div id="dragBtn3" class="dragBtn"><i class="fa fa-reorder"></i></div>
         </div> -->
 
     </div>
 
-    <div class="checkBtn">Check Order <i class="fa fa-paper-plane"></i></div>
+    <div class="checkBtn" onclick="checkItems()">Check Order <i class="fa fa-paper-plane"></i></div>
 
     <script src="script.js"></script>
 </body>
